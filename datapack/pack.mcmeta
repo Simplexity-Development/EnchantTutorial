@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": "Tutorial on how to create a new enchant with the 1.21 enchant system",
+    "supported_formats": {"min_inclusive": 48, "max_inclusive": 48}
+  }
+}

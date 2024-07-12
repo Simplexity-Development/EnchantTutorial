@@ -13,18 +13,18 @@ those please check out these sites:
 As of 1.21, the directories that will be relevant to making an enchantment are as follows:
 
 ```
-📁 data
-∙∙∙∙∙📁 minecraft
-∙∙∙∙∙∙∙∙∙∙∙📁 enchantment_provider
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📁 raid
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📄 various enchant providers
-∙∙∙∙∙∙∙∙∙∙∙📁 tags
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📁 enchantment
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📁 exclusive_set
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📄 various enchant tags
-∙∙∙∙∙📁 unique_namespace
-∙∙∙∙∙∙∙∙∙∙∙📁 enchantment
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📄 new enchant
+data
+ ├───minecraft
+ │    ├───enchantment
+ │    ├───enchantment_provider
+ │    │   └───raid
+ │    └───tags
+ │        ├───enchantment
+ │        │   └───exclusive_set
+ │        └───item
+ │            └───enchantable
+ └───unique_namespace
+     └───enchantment
 ```
 
 ## How to add a new enchant
@@ -51,10 +51,10 @@ For this example, I will be making a 'bouncy' enchant that makes the player have
 Because this is an enchant we are adding, it will go into our own namespace (`unique_namespace` in this example)
 The directory this will go into should be set up like this:
 ```
-📁 data
-∙∙∙∙∙📁 unique_namespace
-∙∙∙∙∙∙∙∙∙∙∙📁 enchantment
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📄 bouncy.json
+data
+ └───unique_namespace
+     └───enchantment
+         └─── bouncy.json
 ```
 
 ```json
@@ -102,12 +102,12 @@ These tags will remain in the minecraft namespace, as we are altering tags rathe
 The layout for where these will go should be laid out like this:
 
 ```
-📁 data
-∙∙∙∙∙📁 minecraft
-∙∙∙∙∙∙∙∙∙∙∙📁 tags
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📁 enchantment
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📄 non_treasure.json
-∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙📄 tooltip_order.json
+data
+ ├───minecraft
+ │    └───tags
+ │        └───enchantment
+ │            └─── non_treasure.json
+ │            └─── tooltip_order.json
 ```
 
 The two files are as follows:
